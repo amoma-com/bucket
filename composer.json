@@ -1,0 +1,20 @@
+{
+    "name": "amoma-com/bucket",
+    "description": "Bucket is a very minimal, yet useful di-container for PHP.",
+    "keywords": ["dependency-injection"],
+    "homepage": "https://github.com/amoma-com/bucket",
+    "type": "library",
+    "license": "Copyright Troels Knak-Nielsen",
+    "authors": [
+        {
+            "name": "Troels Knak-Nielsen",
+            "homepage": "https://github.com/troelskn/bucket"
+        }
+    ],
+    "require-dev": {
+       "simpletest/simpletest": "1.1.7"
+    },
+    "autoload": {
+        "classmap": ["src/"]
+    }
+}
