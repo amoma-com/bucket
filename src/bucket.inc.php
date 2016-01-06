@@ -58,6 +58,14 @@ class bucket_Scope
     {
         $this->implementations[$interface] = $use_class;
     }
+
+    /**
+     * @return array
+     */
+    public function getInstances()
+    {
+        return $this->instances;
+    }
 }
 
 /**
@@ -183,5 +191,13 @@ class bucket_Container
             return $klass->newInstanceArgs($dependencies);
         }
         return $klass->newInstance();
+    }
+
+    /**
+     * @return \bucket_Scope
+     */
+    public function getScope()
+    {
+        return $this->scope;
     }
 }
